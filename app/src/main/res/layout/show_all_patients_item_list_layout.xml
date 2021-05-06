@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="2dp"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pat_logo_id"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/clinic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/delete_id"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/name_id" />
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_width="170dp"
+                android:layout_height="43dp"
+                android:text="Name"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/delete_id"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toEndOf="@+id/pat_logo_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gender_id"
+                android:layout_width="220dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="4dp"
+                android:text="Gender"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/name_id"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="@+id/name_id"
+                app:layout_constraintTop_toBottomOf="@+id/name_id" />
+
+            <TextView
+                android:id="@+id/mobile_id"
+                android:layout_width="220dp"
+                android:layout_height="41dp"
+                android:textAlignment="center"
+                android:text="Mobile"
+                app:layout_constraintEnd_toEndOf="@+id/gender_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/pat_logo_id"
+                app:layout_constraintTop_toBottomOf="@+id/gender_id" />
+
+            <TextView
+                android:id="@+id/age_id"
+                android:layout_width="221dp"
+                android:layout_height="39dp"
+                android:textAlignment="center"
+                android:text="Age"
+                app:layout_constraintEnd_toEndOf="@+id/mobile_id"
+                app:layout_constraintStart_toStartOf="@+id/mobile_id"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

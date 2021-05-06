@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#B2EBF2"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_set_image_id"
+                android:layout_width="119dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_status_id" />
+
+            <TextView
+                android:id="@+id/profile_status_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="cursive"
+                android:text="Your profile is set"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/name_tag_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="Name:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/profile_status_id"
+                app:layout_constraintTop_toBottomOf="@+id/profile_set_image_id"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/name_placeholder_id"
+                android:layout_width="187dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/name_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/profile_set_image_id"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/specialization_tag_id"
+                android:layout_width="94dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="Specialization:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/name_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/name_placeholder_id" />
+
+            <TextView
+                android:id="@+id/specialization_placeholder_id"
+                android:layout_width="187dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/name_placeholder_id"
+                app:layout_constraintStart_toStartOf="@+id/name_placeholder_id"
+                app:layout_constraintTop_toBottomOf="@+id/name_placeholder_id" />
+
+            <TextView
+                android:id="@+id/mobile_tag_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="cursive"
+                android:text="Mobile:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/specialization_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/specialization_tag_id"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/mobile_placeholder_id"
+                android:layout_width="187dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/specialization_placeholder_id"
+                app:layout_constraintStart_toEndOf="@+id/specialization_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/specialization_placeholder_id" />
+
+            <TextView
+                android:id="@+id/fees_tag_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="cursive"
+                android:text="Fees:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/mobile_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_tag_id" />
+
+            <TextView
+                android:id="@+id/fees_placeholder_id"
+                android:layout_width="187dp"
+                android:layout_height="45dp"
+                android:fontFamily="cursive"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/mobile_placeholder_id"
+                app:layout_constraintStart_toStartOf="@+id/mobile_placeholder_id"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_placeholder_id" />
+
+            <TextView
+                android:id="@+id/schedule_tag_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="cursive"
+                android:text="Schedule:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/fees_tag_id"
+                app:layout_constraintTop_toBottomOf="@+id/fees_tag_id" />
+
+            <TextView
+                android:id="@+id/schedule_placeholder_id"
+                android:layout_width="184dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fees_placeholder_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/fees_placeholder_id"
+                app:layout_constraintTop_toBottomOf="@+id/fees_placeholder_id" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

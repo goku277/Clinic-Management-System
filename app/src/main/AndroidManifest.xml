@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goku.clinicmanagement2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin.ShowAllPatients"></activity>
+        <activity android:name=".Admin.ShowAllDoctors" />
+        <activity android:name=".Admin.Admin" />
+        <activity android:name=".Patient.Postpone" />
+        <activity android:name=".Patient.ShowCreatedPatientProfile" />
+        <activity android:name=".Doctor.Paramedic" />
+        <activity android:name=".Doctor.Herbalist" />
+        <activity android:name=".Doctor.Gynaecologist" />
+        <activity android:name=".Doctor.Dermatologist" />
+        <activity android:name=".Doctor.Chiropractor" />
+        <activity android:name=".Doctor.Optometrist" />
+        <activity android:name=".Doctor.Veterenian" />
+        <activity android:name=".Doctor.Urologist" />
+        <activity android:name=".Doctor.ChildSpecialist" />
+        <activity android:name=".Doctor.EntSpecialist" />
+        <activity android:name=".Doctor.Surgeon" />
+        <activity android:name=".Doctor.Dentist" />
+        <activity android:name=".Doctor.Psychiatrist" />
+        <activity android:name=".Patient.EventBooking" />
+        <activity android:name=".Doctor.Cardiologist" />
+        <activity android:name=".Patient.Dashboard_Patient" />
+        <activity android:name=".Doctor.Doctor_profile" />
+        <activity android:name=".Patient.CollapsingToolbar" />
+        <activity android:name=".Patient.Patient_Profile" />
+        <activity android:name=".Credentials.SplashForAll" />
+        <activity android:name=".Credentials.SignUp" />
+        <activity android:name=".Credentials.SignIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

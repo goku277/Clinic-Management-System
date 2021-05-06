@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/patient_profile_pic_id"
+                android:layout_width="113dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/profile_dialog_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:id="@+id/patient_profile_name_id"
+                android:hint="Name"
+                android:inputType="text"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/patient_profile_pic_id"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/patient_profile_pic_id"
+                app:layout_constraintTop_toBottomOf="@+id/patient_profile_pic_id"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/patient_profile_age_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:hint="Age"
+                android:inputType="number"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/patient_profile_name_id"
+                app:layout_constraintStart_toStartOf="@+id/patient_profile_name_id"
+                app:layout_constraintTop_toBottomOf="@+id/patient_profile_name_id"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/patient_profile_mobile_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:hint="Mobile number"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                app:layout_constraintTop_toBottomOf="@+id/patient_profile_age_id"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="start" />
+
+            <RadioGroup
+                android:id="@+id/patient_profile_radiogroup_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patient_profile_mobile_id">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male_id"
+                    android:textColor="#03A9F4"
+                    android:checked="false"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female_id"
+                    android:textColor="#03A9F4"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

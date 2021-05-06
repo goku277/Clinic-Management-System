@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clinic_background"
+    tools:context=".Credentials.SplashForAll">
+
+    <ImageView
+        android:id="@+id/vehicle_id"
+        android:layout_width="121dp"
+        android:layout_height="106dp"
+        android:src="@drawable/bus"
+        app:layout_constraintBottom_toTopOf="@+id/status_of_user_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/status_of_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Doctor?"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#f44336"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/doctor_or_patient_id"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="76dp"
+        android:gravity="center_horizontal" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/doctor_or_patient_id"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="368dp"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toEndOf="@+id/status_of_user_id"
+        app:track="@drawable/track" />
+
+    <TextView
+        android:id="@+id/doctor_or_patient_textview_id"
+        android:layout_width="274dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_or_doctor_id"
+        app:layout_constraintVertical_bias="0.125"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/patient_or_doctor_textview_id"
+        android:layout_width="78dp"
+        android:layout_height="29dp"
+        android:fontFamily="cursive"
+        android:text="Patient?"
+        android:textAlignment="center"
+        android:textColor="#f44336"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_or_doctor_id"
+        app:layout_constraintEnd_toEndOf="@+id/status_of_user_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/status_of_user_id"
+        app:layout_constraintTop_toTopOf="@+id/patient_or_doctor_id"
+        app:layout_constraintVertical_bias="1.0"
+        android:gravity="center_horizontal" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/patient_or_doctor_id"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_or_patient_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doctor_or_patient_id"
+        app:layout_constraintTop_toBottomOf="@+id/status_of_user_id"
+        app:track="@drawable/track" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

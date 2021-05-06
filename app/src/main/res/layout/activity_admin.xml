@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clinic"
+    tools:context=".Admin.Admin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/logout_id"
+                android:layout_width="52dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="right"
+                android:text="Logout"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/doctor_id"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:text="Doctor"
+        android:textColor="#ffffff"
+        android:background="#29B6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar_id" />
+
+    <Button
+        android:id="@+id/patient_id"
+        android:layout_width="315dp"
+        android:background="#29B6F6"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="Patient"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/doctor_id"
+        app:layout_constraintStart_toStartOf="@+id/doctor_id"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_id" />
+
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="72dp"
+         android:text="Hello Admin welcome to Clinic Managaement System"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.493"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />   -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

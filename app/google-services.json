@@ -1,42 +1,41 @@
 {
   "project_info": {
-    "project_number": "451638630559",
-    "firebase_url": "https://clinicmanagement1-93c81-default-rtdb.firebaseio.com",
-    "project_id": "clinicmanagement1-93c81",
-    "storage_bucket": "clinicmanagement1-93c81.appspot.com"
+    "project_number": "Your Project number",
+    "project_id": "Your Project Id",
+    "storage_bucket": "Your Project storage bucket"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:451638630559:android:6965ffeea6b00c145d2aaa",
+        "mobilesdk_app_id": "Your mobilesdk_app_id",
         "android_client_info": {
-          "package_name": "com.goku.clinicmanagement2"
+          "package_name": "Your package name"
         }
       },
       "oauth_client": [
         {
-          "client_id": "451638630559-qct5c63dun3sdoid9cgd8gocnu28kk2b.apps.googleusercontent.com",
+          "client_id": "Your client_id",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.goku.clinicmanagement2",
-            "certificate_hash": "a96b51b131b1063cba67867ff7931d19e48f8260"
+            "package_name": "Your package_name",
+            "certificate_hash": "Your certificate_hash"
           }
         },
         {
-          "client_id": "451638630559-h5mvtnthac05hkb0s08n73goo33gm6m1.apps.googleusercontent.com",
+          "client_id": "your client_id",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBWI1AzYQOFP-UooAGUgELdCPg6wjuPTTw"
+          "current_key": "Your current_key"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "451638630559-h5mvtnthac05hkb0s08n73goo33gm6m1.apps.googleusercontent.com",
+              "client_id": "Your client_id",
               "client_type": 3
             }
           ]
